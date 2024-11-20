@@ -1,6 +1,4 @@
-theme: jekyll-theme-midnight
-# minima:
-#   skin: dark
+remote_theme: sighingnow/jekyll-gitbook
 title: portfolio
 # description: none
 author: issam-eddine
