@@ -1,6 +1,8 @@
 theme: minima
+minima:
+  skin: dark
 title: portfolio
-description: none
+# description: none
 author: issam-eddine
 # email: first-name.family-name@example.com
 social:
