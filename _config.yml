@@ -1,10 +1,8 @@
 theme: minima
-title: Your Portfolio
-description: .
-author: Your Name
-email: your.email@example.com
+title: portfolio
+description: none
+author: issam-eddine
+# email: first-name.family-name@example.com
 social:
-  twitter: yourusername
-  linkedin: yourlinkedin
-
+  linkedin: https://www.linkedin.com/in/issam-eddine/
 navigation: _data/navigation.yml

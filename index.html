@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-</head>
-<body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I’m [Your Name]. Here are my projects:</p>
-    <ul>
-        <li><a href="project1.html">Project 1: Data Analysis</a></li>
-        <li><a href="project2.html">Project 2: Machine Learning</a></li>
-    </ul>
-</body>
-</html>
+---
+layout: default
+title: My Portfolio
+---
+
+<h1>Welcome to My Portfolio</h1>
+<p>Here are some of the projects I’ve worked on:</p>
+
+<ul>
+  {% for file in site.static_files %}
+    {% if file.path contains '/projects/' and file.extname == '.html' %}
+      <li>
+        <a href="{{ file.path | relative_url }}">{{ file.basename | capitalize }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
