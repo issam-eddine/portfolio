@@ -1,7 +1,4 @@
 theme: jekyll-theme-minima
-title: My Portfolio
-description: Showcasing my skills.
-
 title: Your Portfolio
 description: .
 author: Your Name
@@ -11,4 +8,3 @@ social:
   linkedin: yourlinkedin
 
 navigation: _data/navigation.yml
-
