@@ -1,3 +1,14 @@
 theme: jekyll-theme-minima
 title: My Portfolio
-description: Showcasing my projects and skills.
+description: Showcasing my skills.
+
+title: Your Portfolio
+description: .
+author: Your Name
+email: your.email@example.com
+social:
+  twitter: yourusername
+  linkedin: yourlinkedin
+
+navigation: _data/navigation.yml
+
