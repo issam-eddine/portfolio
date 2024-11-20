@@ -1,28 +1,17 @@
 ---
 layout: default
-<!-- title: portfolio -->
+title: portfolio
 ---
 
-<div style="float: left; width: 200px; padding-right: 20px;">
-  <h3>Navigation</h3>
-  <ul>
-    {% for item in site.data.navigation %}
-      <li>
-        <a href="{{ item.link }}">{{ item.name }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<p>Projects::</p>
 
-<div style="float: right; width: 200px;">
-  <p>Projects:</p>
-  <ul>
-    {% for file in site.static_files %}
-      {% if file.path contains '/projects/' and file.extname == '.html' %}
-        <li>
-          <a href="{{ file.path | relative_url }}">{{ file.basename | capitalize }}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div>
+<ul>
+  {% for file in site.static_files %}
+    {% if file.path contains '/projects/' and file.extname == '.html' %}
+      <li>
+        <a href="{{ file.path | relative_url }}">{{ file.basename | capitalize }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
