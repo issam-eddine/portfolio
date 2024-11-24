@@ -3,14 +3,22 @@ layout: default
 <!-- title: portfolio -->
 ---
 
-<p>projects:</p>
+<div class="sidebar">
+    <ul>
+        <li><a href="/index.html">Main</a></li>
+        <li><a href="/about/about.html">About</a></li>
+    </ul>
+</div>
 
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains '/projects/' and file.extname == '.html' %}
-      <li>
-        <a href="{{ file.path | relative_url }}">{{ file.basename }}</a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+<div class="content">
+    <p>projects:</p>
+    <ul>
+        {% for file in site.static_files %}
+            {% if file.path contains '/projects/' and file.extname == '.html' %}
+                <li>
+                    <a href="{{ file.path | relative_url }}">{{ file.basename }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
