@@ -14,11 +14,3 @@ body {
     padding: 15px;
 }
 
-.site-header {
-  display: none !important;
-}
-
-/* Adjust main content to fill the space */
-.page-content {
-  padding-top: 0;
-} 
