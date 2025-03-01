@@ -7,14 +7,15 @@ title: Machine Learning Positions
     <h1>Machine Learning Positions</h1>
     
     <ul>
-        {% assign ml_positions = site.data.machine_learning_positions %}
-        {% if ml_positions %}
-            {% for line in ml_positions %}
-                <li>{{ line.name }} – <a href="{{ line.link }}">{{ line.link }}</a></li>
-            {% endfor %}
-        {% endif %}
+        {% assign positions = site.static_files | where: "path", "documents/machine–learning–positions.txt" | first %}
+        {% for line in positions.content | split: '\n' %}
+            {% unless forloop.first %}
+                <li>{{ line }}</li>
+            {% endunless %}
+        {% endfor %}
     </ul>
 
+    
     <p><a href="{{ site.baseurl }}/index.html">Back to main page</a></p>
 </div>
 
