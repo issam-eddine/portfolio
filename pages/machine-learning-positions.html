@@ -6,7 +6,7 @@ title: Machine Learning Positions
 <div class="content">
     <h1>Machine Learning Positions</h1>
     
-    <!-- {% assign ml_positions = site.static_files | where: "path", "documents/machine–learning–positions.txt" | first %}
+    {% assign ml_positions = site.static_files | where: "path", "documents/machine–learning–positions.txt" | first %}
     {% if ml_positions %}
         {% capture ml_content %}{{ ml_positions.content }}{% endcapture %}
         {% assign ml_lines = ml_content | split: "\n" %}
@@ -18,7 +18,7 @@ title: Machine Learning Positions
                 {% endif %}
             {% endfor %}
         </ul>
-    {% endif %} -->
+    {% endif %}
 
     <p><a href="../index.html">Back to main page</a></p>
 </div>
