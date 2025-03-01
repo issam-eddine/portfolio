@@ -5,5 +5,5 @@ Gemfile
 Gemfile.lock
 
 # files
-machine–learning–positions.txt
-quantitative–research–positions.txt
+documents/machine–learning–positions.txt
+documents/quantitative–research–positions.txt
