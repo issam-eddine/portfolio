@@ -4,6 +4,6 @@ command–lines.txt
 Gemfile
 Gemfile.lock
 
-# files
-documents/machine–learning–positions.txt
-documents/quantitative–research–positions.txt
+# Ignore the documents folder
+documents/
+
