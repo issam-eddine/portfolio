@@ -1,6 +1,10 @@
 # ignore command–lines.txt
 command–lines.txt
 
+# remove .venv folder
+.venv/
+
+# remove Gemfile and Gemfile.lock
 Gemfile
 Gemfile.lock
 
