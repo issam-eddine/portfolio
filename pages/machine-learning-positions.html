@@ -6,14 +6,14 @@ title: Machine Learning Positions
 <div class="content">
     <h1>Machine Learning Positions</h1>
     
-    {% assign ml_positions = site.data.machine_learning_positions %}
-    {% if ml_positions %}
-        <ul>
+    <ul>
+        {% assign ml_positions = site.data.machine_learning_positions %}
+        {% if ml_positions %}
             {% for line in ml_positions %}
                 <li>{{ line.name }} – <a href="{{ line.link }}">{{ line.link }}</a></li>
             {% endfor %}
-        </ul>
-    {% endif %}
+        {% endif %}
+    </ul>
 
     <p><a href="{{ site.baseurl }}/index.html">Back to main page</a></p>
 </div>
